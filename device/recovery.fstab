@@ -1,0 +1,43 @@
+# Recovery FSTAB for MT6768 A05m Partitions
+
+# Partition layout for MT6768 A05m
+
+# File system information
+# <file_system_type> <mount_point> <options> <dump> <pass>
+
+# Boot partition
+boot          /boot    emmc        defaults    0    0
+
+# Recovery partition
+recovery      /recovery emmc       defaults    0    0
+
+# System partition
+system        /system  ext4       rw,noatime   0    0
+
+# Vendor partition
+vendor        /vendor  ext4       rw,noatime   0    0
+
+# Userdata partition
+userdata      /data    ext4       rw,noatime   0    0
+
+# Cache partition
+cache         /cache   ext4       rw,noatime   0    0
+
+# Persist partition
+persist       /persist ext4       rw,noatime   0    0
+
+# Misc partition
+misc          /misc    emmc       defaults    0    0
+
+# Logo partition
+logo          /logo    emmc       defaults    0    0
+
+# Expdb partition
+expdb         /expdb   emmc       defaults    0    0
+
+# FRP partition
+frp           /frp     emmc       defaults    0    0
+
+# Removable storage
+sdcard1       /sdcard1 vfat      defaults    0    0
+usb-otg      /usb-otg vfat      defaults    0    0
